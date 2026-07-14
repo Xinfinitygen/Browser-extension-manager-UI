@@ -1,11 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BROWSER EXTENSION MANAGER</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-    
+
+    <header>
+
+        <!-- Navigation 1: Utility / Top Bar Menu -->
+        <nav class="nav-utility" aria-label="Utility">
+
+            <div class="nav-utility-logo">
+                <img class="nav-utility-logo-img" src="./Assets/images/logo.svg" alt="Browser Extension Manager Logo">
+            </div>
+
+            <div class="nav-utility-toggle-container">
+                <img src="./Assets/images/icon-sun.svg" alt="Toggle Theme">
+            </div>
+
+        </nav>
+
+        <!-- Navigation 2: Primary Site Menu -->
+        <nav class="nav-primary" aria-label="Primary">
+
+            <h1>Extensions List</h1>
+
+            <div class="nav-primary-btn-container">
+                <button type="button">All</button>
+                <button type="button">Active</button>
+                <button type="button">Inactive</button>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero-section">
+
+            <div class="hero-container">
+
+                <!-- Extension Card 1-->
+                <div class="extension">
+
+                    <div class="extension-content">
+
+                        <img src="./Assets/images/logo-devlens.svg" alt="DevLens Logo">
+
+                        <div class="extension-text-group">
+
+                            <h3>DevLens</h3>
+
+                            <p>
+                                Quickly inspect page layout and
+                                visualize element boundaries.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="extension-buttons">
+
+                        <button type="button">Remove</button>
+
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox">
+
+                            <span class="slider"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Extension Card 2-->
+                <div class="extension">
+
+                    <div class="extension-content">
+
+                        <img src="./Assets/images/logo-style-spy.svg" alt="DevLens Logo">
+
+                        <div class="extension-text-group">
+
+                            <h3>StyleSpy</h3>
+
+                            <p>
+                                Instantly analyze and copy CSS from
+                                any webpage element.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="extension-buttons">
+
+                        <button type="button">Remove</button>
+
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox">
+
+                            <span class="slider"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Extension Card 3-->
+                <div class="extension">
+
+                    <div class="extension-content">
+
+                        <img src="./Assets/images/logo-speed-boost.svg" alt="DevLens Logo">
+
+                        <div class="extension-text-group">
+
+                            <h3>SpeedBoost</h3>
+
+                            <p>
+                                Optimizes browser resource usage to
+                                accelerate page loading.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="extension-buttons">
+
+                        <button type="button">Remove</button>
+
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox">
+
+                            <span class="slider"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Extension Card 4-->
+                <div class="extension">
+
+                    <div class="extension-content">
+
+                        <img src="./Assets/images/logo-json-wizard.svg" alt="DevLens Logo">
+
+                        <div class="extension-text-group">
+
+                            <h3>JSONWizard</h3>
+
+                            <p>
+                                Formats, validate, and prettifies
+                                JSON responses in-browser.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="extension-buttons">
+
+                        <button type="button">Remove</button>
+
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox">
+
+                            <span class="slider"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Extension Card 5-->
+                <div class="extension">
+
+                    <div class="extension-content">
+
+                        <img src="./Assets/images/logo-tab-master-pro.svg" alt="DevLens Logo">
+
+                        <div class="extension-text-group">
+
+                            <h3>TabMaster Pro</h3>
+
+                            <p>
+                                Organizes browser tabs into groups
+                                and sessions.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="extension-buttons">
+
+                        <button type="button">Remove</button>
+
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox">
+
+                            <span class="slider"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Extension Card 6-->
+                <div class="extension">
+
+                    <div class="extension-content">
+
+                        <img src="./Assets/images/logo-viewport-buddy.svg" alt="DevLens Logo">
+
+                        <div class="extension-text-group">
+
+                            <h3>ViewportBuddy</h3>
+
+                            <p>
+                                Simulates various screen resolutions
+                                directly within the browser.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="extension-buttons">
+
+                        <button type="button">Remove</button>
+
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox">
+
+                            <span class="slider"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Extension Card 7-->
+                <div class="extension">
+
+                    <div class="extension-content">
+
+                        <img src="./Assets/images/logo-markup-notes.svg" alt="DevLens Logo">
+
+                        <div class="extension-text-group">
+
+                            <h3>Markup Notes</h3>
+
+                            <p>
+                                Enables annotation and notes directly
+                                onto web pages for collaborative
+                                debugging.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="extension-buttons">
+
+                        <button type="button">Remove</button>
+
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox">
+
+                            <span class="slider"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Extension Card 8-->
+                <div class="extension">
+
+                    <div class="extension-content">
+
+                        <img src="./Assets/images/logo-grid-guides.svg" alt="DevLens Logo">
+
+                        <div class="extension-text-group">
+
+                            <h3>GridGuides</h3>
+
+                            <p>
+                                Overlay customizable grids and
+                                alignment guides on any webpage.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="extension-buttons">
+
+                        <button type="button">Remove</button>
+
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox">
+
+                            <span class="slider"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Extension Card 9-->
+                <div class="extension">
+
+                    <div class="extension-content">
+
+                        <img src="./Assets/images/logo-palette-picker.svg" alt="DevLens Logo">
+
+                        <div class="extension-text-group">
+
+                            <h3>Palette Picker</h3>
+
+                            <p>
+                                Instantly extract color Palettes from
+                                any webpage.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="extension-buttons">
+
+                        <button type="button">Remove</button>
+
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox">
+
+                            <span class="slider"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Extension Card 10-->
+                <div class="extension">
+
+                    <div class="extension-content">
+
+                        <img src="./Assets/images/logo-link-checker.svg" alt="DevLens Logo">
+
+                        <div class="extension-text-group">
+
+                            <h3>LinkChecker</h3>
+
+                            <p>
+                                Scans and highlights broken links on
+                                any webpage.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="extension-buttons">
+
+                        <button type="button">Remove</button>
+
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox">
+
+                            <span class="slider"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Extension Card 11-->
+                <div class="extension">
+
+                    <div class="extension-content">
+
+                        <img src="./Assets/images/logo-dom-snapshot.svg" alt="DevLens Logo">
+
+                        <div class="extension-text-group">
+
+                            <h3>DOM Snapshot</h3>
+
+                            <p>
+                                Capture and export DOM structures
+                                quickly.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="extension-buttons">
+
+                        <button type="button">Remove</button>
+
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox">
+
+                            <span class="slider"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Extension Card 12-->
+                <div class="extension">
+
+                    <div class="extension-content">
+
+                        <img src="./Assets/images/logo-console-plus.svg" alt="DevLens Logo">
+
+                        <div class="extension-text-group">
+
+                            <h3>ConsolePlus</h3>
+
+                            <p>
+                                Enhanced developer console with
+                                advanced filtering and logging.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="extension-buttons">
+
+                        <button type="button">Remove</button>
+
+                        <label class="switch">
+                            <input class="switch-input" type="checkbox">
+
+                            <span class="slider"></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
 </body>
+
 </html>
