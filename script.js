@@ -2,7 +2,10 @@ const extensionCards = document.querySelectorAll(".extension");
 const themeToggle = document.querySelector(".nav-utility-toggle-container");
 const themeIcon = document.querySelector(".nav-utility-toggle-container img");
 
+const allButton = document.querySelector(".all-btn");
 const activeButton = document.querySelector(".active-btn");
+const inactiveButton = document.querySelector(".inactive-btn");
+
 const body = document.querySelector("body");
 
 let isDarkMode = true
@@ -21,9 +24,32 @@ themeToggle.addEventListener("click", () => {
     }
 });
 
+allButton.addEventListener("click", () => {
+    activeButton.classList.remove("active-filter");
+    inactiveButton.classList.remove("active-filter");
+
+    allButton.classList.add("active-filter");
+
+    console.log("showing all extensions");
+});
+
 activeButton.addEventListener("click", () => {
-    
-})
+    allButton.classList.remove("active-filter");
+    inactiveButton.classList.remove("active-filter");
+
+    activeButton.classList.add("active-filter");
+
+    console.log("showing active extensions");
+});
+
+inactiveButton.addEventListener("click", () => {
+    inactiveButton.classList.remove("active-filter");
+    allButton.classList.remove("active-filter");
+
+    activeButton.classList.add("active-filter");
+
+    console.log("showing inactive extensions");
+});
 // extensionCards.forEach((card, index) => {
 //     card.style.border = "2px solid red";
 // });
