@@ -31,12 +31,15 @@ allButton.addEventListener("click", () => {
 
     allButton.classList.add("active-filter");
 
-    console.log("showing all extensions");
+    extensionCards.forEach((card) => {
+        card.style.display = "block";
+    })
 });
 
 activeButton.addEventListener("click", () => {
     allButton.classList.remove("active-filter");
     inactiveButton.classList.remove("active-filter");
+
     activeButton.classList.add("active-filter");
 
     extensionCards.forEach((card) => {
@@ -49,69 +52,17 @@ activeButton.addEventListener("click", () => {
 });
 
 inactiveButton.addEventListener("click", () => {
-    inactiveButton.classList.remove("active-filter");
+    activeButton.classList.remove("active-filter");
     allButton.classList.remove("active-filter");
 
-    activeButton.classList.add("active-filter");
+    inactiveButton.classList.add("active-filter");
 
-    console.log("showing inactive extensions");
+    extensionCards.forEach((card) => {
+        if (card.dataset.status === "inactive") {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    })
 });
-// extensionCards.forEach((card, index) => {
-//     card.style.border = "2px solid red";
-// });
 
-
-// console.log(themeIcon);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let listOfStudent = ['Adaeze', 'Okechukwu', 'Emmanuel', 'Prosper']
-
-// listOfStudent = 
-
-// [{
-//     name: 'Adaeze',
-//     age: 19,
-//     course: 'computer science',
-//     isEnrolled: true
-// }, 
-
-// {
-//     name : 'Okechukwu',
-//     age : 20,
-//     course: 'Agriculture',
-//     isEnrolled: false
-// },
-
-// {
-//     name: 'Emmanuel',
-//     age: 17,
-//     course: 'Economics',
-//     isEnrolled: true
-// },
-
-// {
-//     name : 'Prosper',
-//     age: 22 ,
-//     course: 'social analogy',
-//     isErolled: false
-// }]
-
-
-// console.log(listOfStudent);
