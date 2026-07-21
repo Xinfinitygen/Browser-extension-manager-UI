@@ -22,7 +22,7 @@ themeToggle.addEventListener("click", () => {
 });
 
 activeButton.addEventListener("click", () => {
-    console.log("Active Button clicked!");
+    
 })
 // extensionCards.forEach((card, index) => {
 //     card.style.border = "2px solid red";
