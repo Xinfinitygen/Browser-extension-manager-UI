@@ -12,6 +12,9 @@
 body {
     background: #060c24;
 }
+body.light {
+    background: #ebf4fb;
+}
 
 /* ===========================
    Utility Navigation
@@ -56,12 +59,12 @@ body {
     color: #cccfd3;
 }
 
-.nav-primary-btn-container {
+.nav-primary-list {
     display: flex;
     gap: 10px;
 }
 
-.nav-primary-btn-container button {
+.nav-primary-list li {
     padding: 10px 18px;
 
     background: #1f2535;
@@ -69,12 +72,13 @@ body {
 
     border: none;
     border-radius: 10px;
+    list-style: none;
 
     cursor: pointer;
     transition: .3s;
 }
 
-.nav-primary-btn-container button:hover {
+.nav-primary-list li:hover {
     background: #C7231A;
     color: white;
 }
