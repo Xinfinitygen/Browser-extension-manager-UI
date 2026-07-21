@@ -1,4 +1,5 @@
 const extensionCards = document.querySelectorAll(".extension");
+
 const themeToggle = document.querySelector(".nav-utility-toggle-container");
 const themeIcon = document.querySelector(".nav-utility-toggle-container img");
 
@@ -36,10 +37,15 @@ allButton.addEventListener("click", () => {
 activeButton.addEventListener("click", () => {
     allButton.classList.remove("active-filter");
     inactiveButton.classList.remove("active-filter");
-
     activeButton.classList.add("active-filter");
 
-    console.log("showing active extensions");
+    extensionCards.forEach((card) => {
+        if (card.dataset.status === "active") {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
 });
 
 inactiveButton.addEventListener("click", () => {
