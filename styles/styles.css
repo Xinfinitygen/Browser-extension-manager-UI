@@ -82,6 +82,10 @@ body.light {
     background: #C7231A;
     color: white;
 }
+.active-filter {
+    background-color: #C7231A !important;
+    color: #fff;
+}
 
 /* ===========================
    Extension Grid
