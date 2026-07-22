@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- ===========================  Document Metadata ============================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BROWSER EXTENSION MANAGER</title>
@@ -11,9 +12,16 @@
 
 <body>
 
+    <!-- ===========================
+         Page Header
+    ============================ -->
     <header>
 
-        <!-- Navigation 1: Utility / Top Bar Menu -->
+        <!-- ===========================
+             Utility Navigation
+             Contains the application logo
+             and theme toggle button.
+        ============================ -->
         <nav class="nav-utility" aria-label="Utility">
 
             <div class="nav-utility-logo">
@@ -26,28 +34,42 @@
 
         </nav>
 
-        <!-- Navigation 2: Primary Site Menu -->
+        <!-- ===========================
+             Primary Navigation
+             Used for filtering extensions.
+        ============================ -->
         <nav class="nav-primary" aria-label="Primary">
 
             <h1>Extensions List</h1>
 
             <ul class="nav-primary-list">
-                <li class="all-btn"><a href=""></a>All</li>
-                <li class="active-btn"><a href=""></a>Active</li>
-                <li class="inactive-btn"><a href=""></a>Inactive</li>
+                <li class="all-btn">All</li>
+                <li class="active-btn">Active</li>
+                <li class="inactive-btn">Inactive</li>
             </ul>
 
         </nav>
 
     </header>
 
+    <!-- ===========================
+         Main Content
+    ============================ -->
     <main>
+
+        <!-- ===========================
+             Extensions Grid
+             Displays all browser extension
+             cards in a responsive layout.
+        ============================ -->
 
         <section class="hero-section">
 
             <div class="hero-container">
 
-                <!-- Extension Card 1-->
+                <!-- ===========================
+                     Extension Card 1 : DevLens
+                ============================ -->
                 <div data-id="devlens" class="extension" data-status="inactive">
 
                     <div class="extension-content">
@@ -81,7 +103,9 @@
 
                 </div>
 
-                <!-- Extension Card 2-->
+                <!-- ===========================
+                     Extension Card 2 : StyleSpy
+                ============================ -->
                 <div data-id="stylespy" class="extension" data-status="active">
 
                     <div class="extension-content">
@@ -115,7 +139,9 @@
 
                 </div>
 
-                <!-- Extension Card 3-->
+                <!-- ===========================
+                     Extension Card 3 : SpeedBoost
+                ============================ -->
                 <div data-id="speedboost" class="extension" data-status="inactive">
 
                     <div class="extension-content">
@@ -149,7 +175,9 @@
 
                 </div>
 
-                <!-- Extension Card 4-->
+                <!-- ===========================
+                     Extension Card 4 : JSONWizard
+                ============================ -->
                 <div data-id="jsonwizard" class="extension" data-status="active">
 
                     <div class="extension-content">
@@ -183,7 +211,9 @@
 
                 </div>
 
-                <!-- Extension Card 5-->
+                <!-- ===========================
+                     Extension Card 5 : TabMaster Pro
+                ============================ -->
                 <div data-id="tabmasterpro" class="extension" data-status="inactive">
 
                     <div class="extension-content">
@@ -217,7 +247,9 @@
 
                 </div>
 
-                <!-- Extension Card 6-->
+                <!-- ===========================
+                     Extension Card 6 : ViewportBuddy
+                ============================ -->
                 <div data-id="viewportbuddy" class="extension" data-status="active">
 
                     <div class="extension-content">
@@ -251,7 +283,9 @@
 
                 </div>
 
-                <!-- Extension Card 7-->
+                <!-- ===========================
+                     Extension Card 7 : Markup Notes
+                ============================ -->
                 <div data-id="markupnotes" class="extension" data-status="inactive">
 
                     <div class="extension-content">
@@ -286,7 +320,9 @@
 
                 </div>
 
-                <!-- Extension Card 8-->
+                <!-- ===========================
+                     Extension Card 8 : GridGuides
+                ============================ -->
                 <div data-id="gridguides" class="extension" data-status="active">
 
                     <div class="extension-content">
@@ -320,7 +356,9 @@
 
                 </div>
 
-                <!-- Extension Card 9-->
+                <!-- ===========================
+                     Extension Card 9 : Palette Picker
+                ============================ -->
                 <div data-id="palettepicker" class="extension" data-status="active">
 
                     <div class="extension-content">
@@ -354,7 +392,9 @@
 
                 </div>
 
-                <!-- Extension Card 10-->
+                <!-- ===========================
+                     Extension Card 10 : LinkChecker
+                ============================ -->
                 <div data-id="linkchecker" class="extension" data-status="inactive">
 
                     <div class="extension-content">
@@ -388,7 +428,9 @@
 
                 </div>
 
-                <!-- Extension Card 11-->
+                <!-- ===========================
+                     Extension Card 11 : DOM Snapshot
+                ============================ -->
                 <div data-id="domsnapshot" class="extension" data-status="inactive">
 
                     <div class="extension-content">
@@ -422,7 +464,9 @@
 
                 </div>
 
-                <!-- Extension Card 12-->
+                <!-- ===========================
+                     Extension Card 12 : ConsolePlus
+                ============================ -->
                 <div data-id="consoleplus" class="extension" data-status="active">
 
                     <div class="extension-content">
@@ -463,6 +507,7 @@
 
     </main>
 
+    <!-- Main JavaScript -->
     <script src="./script.js"></script>
 </body>
 
