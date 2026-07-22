@@ -1,7 +1,3 @@
-/* ===========================
-   Global Styles
-=========================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +8,65 @@
 body {
     background: #060c24;
 }
+
+body,
+.nav-utility,
+.extension,
+.nav-primary li,
+.extension-buttons button {
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease;
+}
+
 body.light {
-    background: #ebf4fb;
+    background: #ebf4fd;
+}
+
+body.light .nav-utility {
+    background: #fcfdff;
+    border: 1px solid #d6e2f5;
+
+}
+
+body.light .nav-utility-toggle-container {
+    background: #eeeeef;
+}
+
+body.light .extension {
+    background: #fcfdff;
+    color: #091540;
+    border: 1px solid #d6e2f5;
+
+}
+
+body.light .extension-text-group p {
+    color: #535868;
+}
+
+
+body.light .nav-primary h1 {
+    color: #0c143e;
+}
+
+body.light .nav-primary li {
+    background: #fbfdff;
+    color: #0c143e;
+    border: 1px solid #d6e2f5;
+
+}
+
+body.light .extension-buttons button {
+    background: #ffffff;
+    color: #091540;
+    border: 1px solid #cfd6e6;
+}
+
+body.light .extension-buttons button:hover {
+    background: #C7231A;
+    color: white;
+    border-color: #C7231A;
 }
 
 /* ===========================
@@ -82,6 +135,7 @@ body.light {
     background: #C7231A;
     color: white;
 }
+
 .active-filter {
     background-color: #C7231A !important;
     color: #fff;
@@ -96,7 +150,7 @@ body.light {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 20px;
+    gap: 16px;
 
     margin: 50px;
 }
@@ -296,7 +350,7 @@ body.light {
         text-align: center;
     }
 
-    .nav-primary-btn-container {
+    .nav-primary-list {
         justify-content: center;
         flex-wrap: wrap;
     }
